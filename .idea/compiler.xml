@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="realestate" />
+        <module name="realestate-001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="realestate" target="1.5" />
+      <module name="realestate-001" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
