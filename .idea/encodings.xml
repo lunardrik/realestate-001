@@ -2,7 +2,16 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/database/wp_options.sql" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/database/wp_realestate.sql" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/configured-resources/.htaccess" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/configured-resources/wp-config.php" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/plugins/be-subpages-widget.1.6.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/plugins/embed-google-map.3.2.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/themes/building.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/themes/estateagent.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/themes/homepress.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/themes/myhouse.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/themes/sweethome.zip" charset="windows-1252" />
   </component>
 </project>
