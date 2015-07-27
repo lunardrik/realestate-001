@@ -50,6 +50,20 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>install-file-slider-image</id>
+                            <phase>initialize</phase>
+                            <goals>
+                                <goal>install-file</goal>
+                            </goals>
+                            <configuration>
+                                <file>src/plugins/slider-image.2.8.7.zip</file>
+                                <groupId>com.quanlm.php.wordpress.plugins</groupId>
+                                <artifactId>slider-image</artifactId>
+                                <version>2.8.7-SNAPSHOT</version>
+                                <packaging>zip</packaging>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>install-file-building</id>
                             <phase>initialize</phase>
                             <goals>
@@ -148,6 +162,12 @@
                                         <type>zip</type>
                                     </artifactItem>
                                     <artifactItem>
+                                        <groupId>com.quanlm.php.wordpress.plugins</groupId>
+                                        <artifactId>slider-image</artifactId>
+                                        <version>2.8.7-SNAPSHOT</version>
+                                        <type>zip</type>
+                                    </artifactItem>
+                                    <artifactItem>
                                         <groupId>com.quanlm.php.wordpress.themes</groupId>
                                         <artifactId>building</artifactId>
                                         <version>0.0.1-SNAPSHOT</version>
@@ -237,6 +257,22 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>copy-resources-plugin-03</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/plugins/slider-image</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/target/dependency/slider-image</directory>
+                                        <filtering>true</filtering>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>copy-resources-theme-01</id>
                             <phase>process-resources</phase>
                             <goals>
@@ -312,6 +348,25 @@
                                     <resource>
                                         <directory>${basedir}/target/dependency/sweethome</directory>
                                         <filtering>true</filtering>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>copy-modified-resources-01</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/themes/building</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/src/main/modified-resources</directory>
+                                        <filtering>true</filtering>
+                                        <includes>
+                                            <include>style.css</include>
+                                        </includes>
                                     </resource>
                                 </resources>
                             </configuration>
