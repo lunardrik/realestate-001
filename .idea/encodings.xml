@@ -2,12 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/database/wp_realestate.sql" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/database/wp_realestate.sql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/configured-resources/.htaccess" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/configured-resources/wp-config.php" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/modified-resources/style.css" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/plugins/be-subpages-widget.1.6.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/plugins/eg-attachments.2.1.3.zip" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/plugins/embed-google-map.3.2.zip" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/plugins/master-slider.2.5.1.zip" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/plugins/slider-image.2.8.7.zip" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/themes/building.zip" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/themes/estateagent.zip" charset="windows-1252" />
