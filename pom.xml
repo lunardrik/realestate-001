@@ -64,6 +64,34 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>install-file-eg-attachments</id>
+                            <phase>initialize</phase>
+                            <goals>
+                                <goal>install-file</goal>
+                            </goals>
+                            <configuration>
+                                <file>src/plugins/eg-attachments.2.1.3.zip</file>
+                                <groupId>com.quanlm.php.wordpress.plugins</groupId>
+                                <artifactId>eg-attachments</artifactId>
+                                <version>2.1.3-SNAPSHOT</version>
+                                <packaging>zip</packaging>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>install-file-master-slider</id>
+                            <phase>initialize</phase>
+                            <goals>
+                                <goal>install-file</goal>
+                            </goals>
+                            <configuration>
+                                <file>src/plugins/master-slider.2.5.1.zip</file>
+                                <groupId>com.quanlm.php.wordpress.plugins</groupId>
+                                <artifactId>master-slider</artifactId>
+                                <version>2.5.1-SNAPSHOT</version>
+                                <packaging>zip</packaging>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>install-file-building</id>
                             <phase>initialize</phase>
                             <goals>
@@ -165,6 +193,18 @@
                                         <groupId>com.quanlm.php.wordpress.plugins</groupId>
                                         <artifactId>slider-image</artifactId>
                                         <version>2.8.7-SNAPSHOT</version>
+                                        <type>zip</type>
+                                    </artifactItem>
+                                    <artifactItem>
+                                        <groupId>com.quanlm.php.wordpress.plugins</groupId>
+                                        <artifactId>eg-attachments</artifactId>
+                                        <version>2.1.3-SNAPSHOT</version>
+                                        <type>zip</type>
+                                    </artifactItem>
+                                    <artifactItem>
+                                        <groupId>com.quanlm.php.wordpress.plugins</groupId>
+                                        <artifactId>master-slider</artifactId>
+                                        <version>2.5.1-SNAPSHOT</version>
                                         <type>zip</type>
                                     </artifactItem>
                                     <artifactItem>
@@ -273,6 +313,38 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>copy-resources-plugin-04</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/plugins/eg-attachments</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/target/dependency/eg-attachments</directory>
+                                        <filtering>true</filtering>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>copy-resources-plugin-05</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/plugins/master-slider</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/target/dependency/master-slider</directory>
+                                        <filtering>true</filtering>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>copy-resources-theme-01</id>
                             <phase>process-resources</phase>
                             <goals>
@@ -366,6 +438,44 @@
                                         <filtering>true</filtering>
                                         <includes>
                                             <include>style.css</include>
+                                        </includes>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>copy-modified-resources-02</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/plugins/eg-attachments</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/src/main/modified-resources</directory>
+                                        <filtering>true</filtering>
+                                        <includes>
+                                            <include>eg-attachments.php</include>
+                                        </includes>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>copy-lib-01</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/plugins/eg-attachments/js</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/src/lib/color-thief/dist/</directory>
+                                        <filtering>true</filtering>
+                                        <includes>
+                                            <include>color-thief.min.js</include>
                                         </includes>
                                     </resource>
                                 </resources>
