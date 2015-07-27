@@ -408,6 +408,25 @@
                             </configuration>
                         </execution>
                         <execution>
+                            <id>copy-modified-resources-02</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>copy-resources</goal>
+                            </goals>
+                            <configuration>
+                                <outputDirectory>${basedir}/target/classes/wp-content/plugins/eg-attachments</outputDirectory>
+                                <resources>
+                                    <resource>
+                                        <directory>${basedir}/src/main/modified-resources</directory>
+                                        <filtering>true</filtering>
+                                        <includes>
+                                            <include>eg-attachments.php</include>
+                                        </includes>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
+                        <execution>
                             <id>copy-lib-01</id>
                             <phase>process-resources</phase>
                             <goals>

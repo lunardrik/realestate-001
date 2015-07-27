@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/database/wp_realestate.sql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/configured-resources/.htaccess" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/configured-resources/eg-attachments.php" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/configured-resources/wp-config.php" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/modified-resources/style.css" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/plugins/be-subpages-widget.1.6.zip" charset="windows-1252" />
