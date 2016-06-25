@@ -105,62 +105,6 @@
                                 <packaging>zip</packaging>
                             </configuration>
                         </execution>
-                        <execution>
-                            <id>install-file-estateagent</id>
-                            <phase>initialize</phase>
-                            <goals>
-                                <goal>install-file</goal>
-                            </goals>
-                            <configuration>
-                                <file>src/themes/estateagent.zip</file>
-                                <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                <artifactId>estateagent</artifactId>
-                                <version>0.0.1-SNAPSHOT</version>
-                                <packaging>zip</packaging>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>install-file-homepress</id>
-                            <phase>initialize</phase>
-                            <goals>
-                                <goal>install-file</goal>
-                            </goals>
-                            <configuration>
-                                <file>src/themes/homepress.zip</file>
-                                <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                <artifactId>homepress</artifactId>
-                                <version>0.0.1-SNAPSHOT</version>
-                                <packaging>zip</packaging>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>install-file-myhouse</id>
-                            <phase>initialize</phase>
-                            <goals>
-                                <goal>install-file</goal>
-                            </goals>
-                            <configuration>
-                                <file>src/themes/myhouse.zip</file>
-                                <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                <artifactId>myhouse</artifactId>
-                                <version>0.0.1-SNAPSHOT</version>
-                                <packaging>zip</packaging>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>install-file-sweethome</id>
-                            <phase>initialize</phase>
-                            <goals>
-                                <goal>install-file</goal>
-                            </goals>
-                            <configuration>
-                                <file>src/themes/sweethome.zip</file>
-                                <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                <artifactId>sweethome</artifactId>
-                                <version>0.0.1-SNAPSHOT</version>
-                                <packaging>zip</packaging>
-                            </configuration>
-                        </execution>
                     </executions>
                 </plugin>
                 <!-- END install plugin & theme files into local repo -->
@@ -210,30 +154,6 @@
                                     <artifactItem>
                                         <groupId>com.quanlm.php.wordpress.themes</groupId>
                                         <artifactId>building</artifactId>
-                                        <version>0.0.1-SNAPSHOT</version>
-                                        <type>zip</type>
-                                    </artifactItem>
-                                    <artifactItem>
-                                        <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                        <artifactId>estateagent</artifactId>
-                                        <version>0.0.1-SNAPSHOT</version>
-                                        <type>zip</type>
-                                    </artifactItem>
-                                    <artifactItem>
-                                        <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                        <artifactId>homepress</artifactId>
-                                        <version>0.0.1-SNAPSHOT</version>
-                                        <type>zip</type>
-                                    </artifactItem>
-                                    <artifactItem>
-                                        <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                        <artifactId>myhouse</artifactId>
-                                        <version>0.0.1-SNAPSHOT</version>
-                                        <type>zip</type>
-                                    </artifactItem>
-                                    <artifactItem>
-                                        <groupId>com.quanlm.php.wordpress.themes</groupId>
-                                        <artifactId>sweethome</artifactId>
                                         <version>0.0.1-SNAPSHOT</version>
                                         <type>zip</type>
                                     </artifactItem>
@@ -355,70 +275,6 @@
                                 <resources>
                                     <resource>
                                         <directory>${basedir}/target/dependency/building</directory>
-                                        <filtering>true</filtering>
-                                    </resource>
-                                </resources>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>copy-resources-theme-02</id>
-                            <phase>process-resources</phase>
-                            <goals>
-                                <goal>copy-resources</goal>
-                            </goals>
-                            <configuration>
-                                <outputDirectory>${basedir}/target/classes/wp-content/themes/estateagent</outputDirectory>
-                                <resources>
-                                    <resource>
-                                        <directory>${basedir}/target/dependency/estateagent</directory>
-                                        <filtering>true</filtering>
-                                    </resource>
-                                </resources>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>copy-resources-theme-03</id>
-                            <phase>process-resources</phase>
-                            <goals>
-                                <goal>copy-resources</goal>
-                            </goals>
-                            <configuration>
-                                <outputDirectory>${basedir}/target/classes/wp-content/themes/homepress</outputDirectory>
-                                <resources>
-                                    <resource>
-                                        <directory>${basedir}/target/dependency/homepress</directory>
-                                        <filtering>true</filtering>
-                                    </resource>
-                                </resources>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>copy-resources-theme-04</id>
-                            <phase>process-resources</phase>
-                            <goals>
-                                <goal>copy-resources</goal>
-                            </goals>
-                            <configuration>
-                                <outputDirectory>${basedir}/target/classes/wp-content/themes/myhouse</outputDirectory>
-                                <resources>
-                                    <resource>
-                                        <directory>${basedir}/target/dependency/myhouse</directory>
-                                        <filtering>true</filtering>
-                                    </resource>
-                                </resources>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>copy-resources-theme-05</id>
-                            <phase>process-resources</phase>
-                            <goals>
-                                <goal>copy-resources</goal>
-                            </goals>
-                            <configuration>
-                                <outputDirectory>${basedir}/target/classes/wp-content/themes/sweethome</outputDirectory>
-                                <resources>
-                                    <resource>
-                                        <directory>${basedir}/target/dependency/sweethome</directory>
                                         <filtering>true</filtering>
                                     </resource>
                                 </resources>
